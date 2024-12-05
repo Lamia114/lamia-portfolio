@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #121212;
+    color: #00e5ff; /* Neon blue */
+    padding: 80px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3.5em;
+    color: #00e5ff;
+    animation: slideIn 1s ease-out;
+}
+
+.header h2 {
+    margin: 5px 0;
+    font-size: 1.6em;
+    font-weight: 300;
+    color: #8e8e8e; /* Lighter text */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 25px;
+}
+
+.nav-links a {
+    color: #00e5ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff4081; /* Neon pink on hover */
+}
+
+.about, .skills, .projects, .contact {
+    padding: 60px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.about-image img {
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05); /* Zoom effect */
+}
+
+.skills-grid, .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.skill-card, .project-card {
+    background-color: #1f1f1f; /* Dark card background */
+    padding: 25px;
+    border: 2px solid #00e5ff; /* Neon border */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-card:hover, .project-card:hover {
+    transform: translateY(-8px); /* Lift effect */
+    background-color: #2d2d2d; /* Darker hover effect */
+}
+
+.project-card h3 {
+    color: #00e5ff;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover h3 {
+    color: #ff4081; /* Neon pink on hover */
+}
+
+footer {
+    background-color: #121212;
+    color: #8e8e8e;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #00e5ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff4081; /* Neon pink on hover */
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
